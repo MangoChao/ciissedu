@@ -1,0 +1,22 @@
+//git ftp文檔
+https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md
+
+//安裝git ftp
+//管理員開啟 Git Bash 輸入已下指令
+curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp > /bin/git-ftp
+chmod 755 /bin/git-ftp
+
+//推正式機
+git ftp init -u admin@.com -p '' ftp://ftp..com/
+git ftp push -u admin@.com -p '' ftp://ftp..com/
+//設定主機
+git config git-ftp.url ftp://ftp.mangotoolweb.com/
+git config git-ftp.user ciissedu@mangotoolweb.com
+git config git-ftp.password 'I}GNnv1AN6G4'
+//設定本機路徑
+git config git-ftp.syncroot C:\xampp\htdocs\ciissedu
+
+//初始化
+git ftp init
+//推測試機
+git ftp push 
