@@ -19,4 +19,5 @@ git config git-ftp.syncroot C:\xampp\htdocs\ciissedu
 //初始化
 git ftp init
 //推測試機
-git ftp push 
+git ftp push
+123
