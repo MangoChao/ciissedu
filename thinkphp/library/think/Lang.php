@@ -208,6 +208,8 @@ class Lang
                 $langSet = $acceptLangs[$langSet];
             } elseif (isset(self::$acceptLanguage[$langSet])) {
                 $langSet = self::$acceptLanguage[$langSet];
+            }else{
+                $langSet = Config::get('default_lang');
             }
         }
 
